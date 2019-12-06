@@ -1,0 +1,2 @@
+# eurekaconfig
+configserver
