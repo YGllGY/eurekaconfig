@@ -1,0 +1,14 @@
+#指定当前微服务架构的注册中心的地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka,http://localhost:8760/eureka
+#配置当前节点的微服务实例名
+spring:
+  application:
+    name: eurekafeign
+#制定当前节点端口是8765
+server:
+  port: 8765
+#修改ribbon的负载均衡策略为随机。值是当前策略的类的全限定名。
+EUREKAPRODUCT.ribbon.NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
